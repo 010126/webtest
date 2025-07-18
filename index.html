@@ -339,40 +339,42 @@
     </script>
 
     <script>
-        document.querySelector("form").addEventListener("submit", async function (e) {
-            e.preventDefault();
+  document.querySelector("form").addEventListener("submit", async function (e) {
+    e.preventDefault();
 
-            const name = document.querySelector("#name").value;
-            const phone = document.querySelector("#phone").value;
-            const email = document.querySelector("#email").value;
-            const message = document.querySelector("#message").value;
-            const consent = document.querySelector("input[type='checkbox']").checked;
+    const name = document.querySelector("#name").value;
+    const phone = document.querySelector("#phone").value;
+    const email = document.querySelector("#email").value;
+    const message = document.querySelector("#message").value;
+    const consent = document.querySelector("input[type='checkbox']").checked;
 
-            if (!consent) {
-                alert("개인정보 수집에 동의해주세요.");
-                return;
-            }
+    if (!consent) {
+      alert("개인정보 수집에 동의해주세요.");
+      return;
+    }
 
-            const formData = { name, phone, email, message };
+    const formData = { name, phone, email, message };
 
-            try {
-                await fetch("https://script.google.com/macros/s/AKfycbz8gpm1mqgzc_o5Np32ITqPuCQiGoRO8qZtec44cfkfYPkfUapYJh_G0Bijsq_CqgCf/exec", {
-                    method: "POST",
-                    mode: "no-cors", // CORS 오류 방지
-                    body: JSON.stringify(formData),
-                    headers: {
-                        "Content-Type": "application/json",
-                    },
-                });
+    try {
+      await fetch("https://script.google.com/macros/s/AKfycbz8gpm1mqgzc_o5Np32ITqPuCQiGoRO8qZtec44cfkfYPkfUapYJh_G0Bijsq_CqgCf/exec", {
+        method: "POST",
+        mode: "no-cors",
+        body: JSON.stringify(formData),
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
 
-                alert("문의가 성공적으로 접수되었습니다!");
-                e.target.reset();
-            } catch (error) {
-                alert("요청 중 오류가 발생했습니다.");
-                console.error(error);
-            }
-        });
-    </script>
+      // 여기서는 성공 여부 판단 없이 바로 성공 메시지 출력
+      alert("문의가 성공적으로 접수되었습니다!");
+      e.target.reset();
+
+    } catch (error) {
+      alert("요청 중 오류가 발생했습니다.");
+      console.error(error);
+    }
+  });
+</script>
 
     
         
