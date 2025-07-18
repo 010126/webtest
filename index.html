@@ -371,6 +371,8 @@
                     },
                 });
 
+                const text = await response.text(); // 응답 본문 받기
+
                 if (response.ok) {
                     alert("문의가 성공적으로 접수되었습니다!");
                     e.target.reset();
