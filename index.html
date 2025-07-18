@@ -306,40 +306,11 @@
     </main>
 
     
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-
-    <script type="text/javascript">
-        $(window).on('load resize', function () {
-            const $slider = $('.multiple-items');
-
-            // 이미 slick이 초기화된 상태라면 제거
-            if ($slider.hasClass('slick-initialized')) {
-                $slider.slick('unslick');
-            }
-
-            // 현재 윈도우 너비에 따라 슬릭 다시 초기화
-            if (window.innerWidth < 1877) {
-                $slider.slick({
-                    infinite: true,
-                    slidesToShow: 3,
-                    slidesToScroll: 1,
-                    autoplay: true,
-                    autoplaySpeed: 1000,
-                });
-            } else {
-                $slider.slick({
-                    infinite: true,
-                    slidesToShow: 4,
-                    slidesToScroll: 1,
-                    autoplay: true,
-                    autoplaySpeed: 1000,
-                });
-            }
-        });
-    </script>
-
     <script>
-  document.querySelector("form").addEventListener("submit", async function (e) {
+  const form = document.querySelector("form");
+  const submitButton = form.querySelector("button[type='submit']");
+
+  form.addEventListener("submit", async function (e) {
     e.preventDefault();
 
     const name = document.querySelector("#name").value;
@@ -355,6 +326,11 @@
 
     const formData = { name, phone, email, message };
 
+    // 👉 로딩 상태 UI 시작
+    submitButton.disabled = true;
+    submitButton.innerText = "전송 중...";
+    document.body.style.cursor = "progress";
+
     try {
       await fetch("https://script.google.com/macros/s/AKfycbz8gpm1mqgzc_o5Np32ITqPuCQiGoRO8qZtec44cfkfYPkfUapYJh_G0Bijsq_CqgCf/exec", {
         method: "POST",
@@ -365,13 +341,16 @@
         },
       });
 
-      // 여기서는 성공 여부 판단 없이 바로 성공 메시지 출력
       alert("문의가 성공적으로 접수되었습니다!");
       e.target.reset();
-
     } catch (error) {
       alert("요청 중 오류가 발생했습니다.");
       console.error(error);
+    } finally {
+      // 👉 로딩 상태 UI 해제
+      submitButton.disabled = false;
+      submitButton.innerText = "보내기";
+      document.body.style.cursor = "default";
     }
   });
 </script>
