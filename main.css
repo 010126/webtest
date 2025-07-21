@@ -1,6 +1,7 @@
 * {
     margin: 0;
     font-family: "pretendard";
+    
 }
 
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
@@ -43,7 +44,6 @@ header nav ul li a:visited{
     background-image: url(img/main_img.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-
     display: block !important;
     padding-bottom: 100px;
     position: relative;
@@ -54,11 +54,15 @@ header nav ul li a:visited{
 
 .main_img h2 {
   position: absolute;
-  bottom: 10%;
-  left: 80px;
-  margin: 0;
-  font-size: 80px;
+  bottom: 2%;
+  left: 50%;
+  width: 90%;
+  transform: translate(-50%, -50%);
+  /* font-size: 80px; */
+  font-size: clamp(3.5rem, 6vw, 5rem);
   color: #e5e5e5;
+  display: inline-block;
+  margin: auto;
 }
 
 .about_us_img {
