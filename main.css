@@ -80,6 +80,17 @@ h3 {
 
 }
 
+.m_subtitle {
+  font-weight: 800;
+  font-size: 6vw;
+  color: #17171b;
+  float: left;
+  margin-right: 144px;
+  width: 100%;
+  margin-top: 14px;
+  margin-bottom: 14px;
+}
+
 .catalogsubtitle {
   font-weight: 800;
   font-size: 60px;
@@ -88,12 +99,39 @@ h3 {
 
 }
 
+.aboutus {
+  background-color: #F9FAFC;
+}
+
 .about_us_img {
   background-image: url(img/aboutus.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 50vh;
 
+}
+
+.m_about_us_img {
+  background-image: url(img/m_aboutus.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vh;
+
+}
+
+.business {
+  background-color: #002366;
+  padding: 64px 20px;
+  text-align: center;
+
+}
+.business h3 {
+  color: #fff;
+}
+
+
+.business p {
+  color: #fff;
 }
 
 .ba_img_box {
@@ -163,15 +201,18 @@ h3 {
     background-size: cover;
 }
 
+.slider_mobile img {
+  width: 90%;
+
+}
+
+
+
 .catalog_img {
     background-image: url(img/catalog_img.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 20% 80%;
-}
-
-.slider_mobile {
-  display: none !important;
 }
 
 .form-row {
@@ -389,6 +430,10 @@ button.loading .button-text {
     font-size: 3vw !important;
   }
 
+  .m_subtext {
+    font-size: 4vw !important;
+  }
+
   .message_img {
     top: 70% !important;
   }
@@ -397,10 +442,10 @@ button.loading .button-text {
     display: none !important;
   }
 
-  .slider {
+  /* .slider {
     background-color: #94D227;
 
-  }
+  } */
 
   .slider_mobile {
     display: block !important;
@@ -411,6 +456,13 @@ button.loading .button-text {
     
   }
   .catalogsubtext {
-    font-size: 3vw !important;
+    font-size: 4vw !important;
   }
-}
+
+ }
+
+ .m_h2 {
+  font-size: 8vw !important;
+ }
+
+ 

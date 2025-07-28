@@ -14,6 +14,12 @@
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="jquery.fullPage.js"></script>
     <script src="main.js"></script>
+
+    <style>
+        #arrows {
+            display: none;
+        }
+    </style>
     
 
     
@@ -40,7 +46,7 @@
             <!-- 메인비주얼 -->
             <section class="section main_img">
                 
-                <h2 class="w_h2">
+                <h2 class="m_h2">
                     프로모션 아이템부터<br> 코스메틱까지,<br>스타일 있게<br> 브랜드를 전달합니다.
                 </h2>
                
@@ -53,11 +59,11 @@
 
                     <div style="width: 90%; margin-bottom: 36px; position: absolute; top: 30%; left: 50%; transform: translate(-50%, -50%);">
                         <h3>About us</h3>
-                        <p class="subtitle">우리는 브랜드를 위한<br>판촉 파트너 입니다.</p>
-                        <p class="subtext" style="font-weight: 400; font-size: 30px; color: #17171b; margin-top: 10px;">10년 이상의 판촉 전문 경험, 대기업부터 스타트업까지<br>500개 이상 납품, 재고 걱정 없는 유연한 제작 시스템<br>디자인부터 배송까지 원스톱</p>
+                        <p class="m_subtitle">우리는 브랜드를 위한<br>판촉 파트너 입니다.</p>
+                        <p class="m_subtext" style="font-weight: 400; font-size: 30px; color: #17171b; margin-top: 10px;">10년 이상의 판촉 전문 경험, 대기업부터 스타트업까지<br>500개 이상 납품, 재고 걱정 없는 유연한 제작 시스템<br>디자인부터 배송까지 원스톱</p>
                     </div>
 
-                    <div class="about_us_img" style="position: absolute; bottom: 0; width: 100%;">
+                    <div class="m_about_us_img" style="position: absolute; bottom: 0; width: 100%;">
 
                     </div>
                 </div>
@@ -65,112 +71,34 @@
             </section>
 
             <!-- 사업개요 -->
-            <section class="section">
+            <section class="section business">
+                <div style="position: relative; top: 45%; left: 50%; transform: translate(-50%, -50%);">
+                    <h3 style="font-size: 18px; font-weight: 700;">Business Areas</h3>
+                    <p style="font-size: 24px; font-weight: 600; margin-bottom: 40px;">주요 사업 콘텐츠</p>
                 
-                <div style="height: 100vh; position: relative;">
-
-                    <div style="width: 90%; margin-bottom: 36px; position: absolute; top: 25%; left: 50%; transform: translate(-50%, -50%);">
-                        <h3>Business Areas</h3>
-                        <p class="subtitle">주요 사업 콘텐츠</p>
-                        
-                    </div>
-
-                    <div style=" width: 90%; top: 35%; left: 50%; position: absolute; transform: translate(-50%, -50%);">
-                    
-                        <div class="ba_img_box">
-                            <!-- ba_img 1 OFF -->
-                            <div class="ba_img_after">
-                    
-                                <div style="margin: 32px 42px; position: relative; height: 80%; color: #fff;">
-                                    <span style=" font-size: 60px; font-weight: 600;">의류</span>
-                                    <p style="font-size: 26px; position: absolute; left: 0; bottom: 0;">수원 하나로마트 매장을<br>기반으로 국내외
-                                        6가지<br>주요브랜드 제공
-                                        <span style="font-size: 20px;"><br>프로스펙스, 크로커다일, 윌슨, 에어워크,<br>아놀드바시니, 앙드레김</span>
-                                    </p>
-                    
-                                </div>
-                    
-                            </div>
-                    
-                            <!-- ba_img 2 OFF -->
-                            <div class="ba_img_after">
-                    
-                                <div style="margin: 32px 42px; position: relative; height: 80%; color: #fff;">
-                                    <span style=" font-size: 60px; font-weight: 600;">판촉물</span>
-                                    <p style="font-size: 26px; position: absolute; left: 0; bottom: 0;">다양한 협럭 업체를 통해<br>금융권, 대기업 및
-                                        공공분야를<br>위한 맞춤형 상품을 기획/공급
-                                    </p>
-                    
-                                </div>
-                    
-                            </div>
-                    
-                            <!-- ba_img 3 OFF -->
-                            <div class="ba_img_after">
-                    
-                                <div style="margin: 32px 42px; position: relative; height: 80%; color: #fff;">
-                                    <span style=" font-size: 60px; font-weight: 600;">화장품</span>
-                                    <p style="font-size: 26px; position: absolute; left: 0; bottom: 0;">서대문 농협 본사 화장품<br>매장을 기반으로
-                                        복지포인트를<br>활용할 수 있으며,<br>르도암 독점 총판으로<br>다른 업체와 차별화
-                                    </p>
-                    
-                                </div>
-                    
-                            </div>
+                    <div style="display: flex; flex-direction: column; align-items: center;">
+                
+                        <div style="width: 270px; height: 270px; border-radius: 50%; overflow: hidden; margin-bottom: 24px;">
+                            <img src="img/ba1.png" alt="의류 이미지" style="width: 100%; height: 100%; object-fit: cover;">
                         </div>
-                    
-                        <div class="ba_img_box">
-                    
-                    
-                            <!-- ba_img 1 ON -->
-                            <div class="ba_img">
-                    
-                                <div style="margin: 32px 42px; position: relative; height: 86%;">
-                                    <span
-                                        style="color: #fff; font-size: 60px; font-weight: 600; text-shadow: 3px 4px 5px #383838;">의류</span>
-                                    <img src="img/arrow.png" alt="arrow_icon" style="position: absolute; right: 0; bottom: 0;">
-                                </div>
-                    
-                            </div>
-                    
-                    
-                            <!-- ba_img 2 ON -->
-                            <div class="ba_img">
-                    
-                                <div style="margin: 32px 42px; position: relative; height: 86%;">
-                                    <span
-                                        style="color: #fff; font-size: 60px; font-weight: 600; text-shadow: 3px 4px 5px #383838;">판촉물</span>
-                                    <img src="img/arrow.png" alt="arrow_icon" style="position: absolute; right: 0; bottom: 0;">
-                                </div>
-                    
-                            </div>
-                    
-                    
-                            <!-- ba_img 3 ON -->
-                            <div class="ba_img">
-                    
-                                <div style="margin: 32px 42px; position: relative; height: 86%;">
-                                    <span
-                                        style="color: #fff; font-size: 60px; font-weight: 600; text-shadow: 3px 4px 5px #383838;">화장품</span>
-                                    <img src="img/arrow.png" alt="arrow_icon" style="position: absolute; right: 0; bottom: 0;">
-                                </div>
-                    
-                            </div>
-                    
-                    
-                        </div>
+                
+                        <h4 style="font-size: 28px; font-weight: 700; margin-bottom: 12px; color: #fff;">의류</h4>
+                        <p style="font-size: 16px; line-height: 1.5; max-width: 300px;">
+                            수원 하나로마트 매장을 기반으로<br> 국내외 6가지 주요브랜드 제공<br>
+                            <span style="font-size: 14px; color: #ccc;">
+                                프로스펙스, 크로커다일, 윌슨, 에어워크,<br>아놀드바시니, 앙드레김
+                            </span>
+                        </p>
+                
                     </div>
-
-                    
-
                 </div>
+            </section>
 
             
-            </section>
 
 
             <!-- 대표인사 -->
-            <section class="section">
+            <!-- <section class="section">
                 <div style="height: 100vh; position: relative;">
                     <div style="width: 90%; margin-bottom: 36px; position: absolute; top: 30%; left: 50%; transform: translate(-50%, -50%);">
                         <h3>Message</h3>
@@ -188,58 +116,91 @@
                     </div>
                 </div>
 
+            </section> -->
+
+            <section class="section"
+                style="height: 100vh; display: flex; justify-content: center; align-items: center; flex-direction: column; padding: 0 20px;">
+                <div style="position: relative; top: 40%; left: 50%; transform: translate(-50%, -50%);">
+                    <!-- 소제목 -->
+                    <h3 style="font-size: 24px; font-weight: 600; margin-bottom: 12px;">Message</h3>
+            
+                    <!-- 메인 문장 -->
+                    <p style="font-size: 24px; font-weight: 700; line-height: 1.4; margin-bottom: 96px;">
+                        판촉, 그 이상의<br>가치를 전합니다.
+                    </p>
+            
+                    <!-- 대제목 -->
+                    <h2 style="font-size: 48px; font-weight: 800; line-height: 1.2; margin-bottom: 96px; text-align: center;">
+                        PROMOTIONAL<br>ITEMS
+                    </h2>
+            
+                    <!-- 설명 텍스트 -->
+                    <p style="font-size: 16px; line-height: 1.5; max-width: 320px; color: #333; float: right;">
+                        고객의 브랜드가 잘 전달될 수 있도록<br>
+                        판촉물 하나에도 마음을 담겠습니다.<br><br>
+                        작지만 강한 회사로, 고객의 입장에서<br>
+                        고민하고 제안드리겠습니다.<br><br>
+                        - 대표 이혜원 드림
+                    </p>
+                </div>
+            
             </section>
 
             <!-- 입점업체 -->
             <section class="section slider">
                 
-                <div style="height: 100vh; position: relative;">
-                    <div style="width: 90%; margin-bottom: 36px; position: absolute; top: 30%; left: 50%; transform: translate(-50%, -50%);">
-                        <h3>Brand Partner</h3>
-                        <p class="subtitle">우리의 가치를<br>함께 전하는 파트너들</p>
-                        
-                    </div>
-
-                    <div>
-                        <div class="multiple-items web_slider"
-                            style="display: flex; width: 90%; position: absolute; top: 65%; left: 50%; transform: translate(-50%, -50%);">
-                            <div><img src="img/slider01.png" alt="slider_img"></div>
-                            <div><img src="img/slider02.png" alt="slider_img"></div>
-                            <div><img src="img/slider03.png" alt="slider_img"></div>
-                            <div><img src="img/slider04.png" alt="slider_img"></div>
-                            <div><img src="img/slider05.png" alt="slider_img"></div>
-                            <div><img src="img/slider06.png" alt="slider_img"></div>
-                            <div><img src="img/slider07.png" alt="slider_img"></div>
-                            <div><img src="img/slider08.png" alt="slider_img"></div>
-                            <div><img src="img/slider09.png" alt="slider_img"></div>
-                            <div><img src="img/slider10.png" alt="slider_img"></div>
-                        </div>
-                    </div>
-
-                    <div>
-                        <div class="multiple-items slider_mobile"
-                            style="display: flex; width: 90%; position: absolute; top: 65%; left: 50%; transform: translate(-50%, -50%);">
-                            <div><img src="img/m_slider_01.png" alt="slider_img"></div>
-                            <div><img src="img/m_slider_02.png" alt="slider_img"></div>
-                            <div><img src="img/m_slider_03.png" alt="slider_img"></div>
-                            <div><img src="img/m_slider_04.png" alt="slider_img"></div>
-                            <div><img src="img/m_slider_05.png" alt="slider_img"></div>
-                            <div><img src="img/m_slider_06.png" alt="slider_img"></div>
-                            <div><img src="img/m_slider_07.png" alt="slider_img"></div>
-                            <div><img src="img/m_slider_08.png" alt="slider_img"></div>
-                            <div><img src="img/m_slider_09.png" alt="slider_img"></div>
-                            <div><img src="img/m_slider_10.png" alt="slider_img"></div>
-                        </div>
-                    </div>
-                    
-
+                <div style="height: 100vh; position: relative;  ">
+                    <div
+                        style="background-color: #94D227; position: absolute; width: 100%; top: 10%; height: 36%;">
+                        <div
+                            style="width: 90%; margin-bottom: 36px; position: absolute; top: 30%; left: 50%; transform: translate(-50%, -50%);">
+                            <h3 style="font-size: 24px;">Brand Partner</h3>
+                            <p class="subtitle">우리의 가치를<br>함께 전하는 파트너들</p>
                 
-                    
+                        </div>
+                
+                
+                        <div>
+                            <div class="multiple-items slider_mobile"
+                                style="display: flex !important; width: 100%; position: absolute; top: 70%; left: 50%; transform: translate(-50%, -50%); ">
+                                <div><img src="img/m_slider_01.png" alt="slider_img"></div>
+                                <div><img src="img/m_slider_02.png" alt="slider_img"></div>
+                                <div><img src="img/m_slider_03.png" alt="slider_img"></div>
+                                <div><img src="img/m_slider_04.png" alt="slider_img"></div>
+                                <div><img src="img/m_slider_05.png" alt="slider_img"></div>
+                                <div><img src="img/m_slider_06.png" alt="slider_img"></div>
+                                <div><img src="img/m_slider_07.png" alt="slider_img"></div>
+                                <div><img src="img/m_slider_08.png" alt="slider_img"></div>
+                                <div><img src="img/m_slider_09.png" alt="slider_img"></div>
+                                <div><img src="img/m_slider_10.png" alt="slider_img"></div>
+                            </div>
+                        </div>
+
+                                       
+                    </div>
+
+                     <div
+                            style="width: 88%; margin-bottom: 36px; position: absolute; top: 70%; left: 50%; transform: translate(-50%, -50%); ">
+                            <h3 style="text-align: center; font-size: 24px;">Catalog</h3>
+                            <p class="catalogsubtitle" style="text-align: center;">우리 제품, 직접 확인해보세요.</p>
+                            <p class="catalogsubtext" style="text-align: center; margin-bottom: 70px;">종이 카탈로그 대신, 언제든지 열람 가능한
+                                PDF<br>카테고리별 정리된 제품 리스트와 단가표 제공</p>
+                        
+                            <a href="#" download="다운로드하는 파일명"
+                                style="text-decoration: none; width: 310px; height: 80px; display: block; margin: auto;">
+                                <button
+                                    style="cursor: pointer; display: block; margin: 0 auto; font-size: 5vw; width: 80%; height: 80px; background-color: #314c9f; color: #fff; border-radius: 50px; border: none;">카탈로그
+                                    다운로드</button>
+                            </a>
+                        
+                        </div>
+                         
+                
                 </div>
             </section>
 
             <!-- 카탈로그 -->
-            <section class="section catalog_img">
+            <!-- <section class="section catalog_img">
                 <div style="height: 100vh; position: relative;">
                     <div style="width: 88%; margin-bottom: 36px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); ">
                         <h3 style="text-align: center;">Catalog</h3>
@@ -257,7 +218,7 @@
                 
                     
                 </div>
-            </section>
+            </section> -->
 
             <!-- 문의하기 -->
             <section class="section contact_us">
@@ -371,6 +332,7 @@
         if (winWidth < 768) {
             $slider.slick({
                 infinite: true,
+                appendArrows: $('#arrows'),
                 slidesToShow: 3,
                 slidesToScroll: 1,
                 autoplay: true,
