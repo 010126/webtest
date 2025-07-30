@@ -225,14 +225,14 @@ h3 {
   flex: 1;
   display: flex;
   flex-direction: column;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
-label {
+/* label {
   font-weight: bold;
   font-size: 14px;
   margin-bottom: 6px;
-}
+} */
 
 input[type="text"],
 input[type="email"],
@@ -273,8 +273,10 @@ button[type="submit"] {
   font-size: 14px;
 }
 
-label {
+.form-group label {
     font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 6px;
 }
 
 .footer {
@@ -457,6 +459,31 @@ button.loading .button-text {
   }
   .catalogsubtext {
     font-size: 4vw !important;
+  }
+
+  .form-group label {
+    font-size: 4vw !important;
+  }
+
+  .form-group input {
+    font-size: 4vw !important;
+  }
+
+  .form-row {
+    gap: 0px !important;
+  }
+
+  #message {
+    font-size: 4vw;
+  }
+
+  .privacy-notice {
+    font-size: 3vw;
+    width: 87%;
+  }
+
+  .footer-inner {
+    display: block;
   }
 
  }
