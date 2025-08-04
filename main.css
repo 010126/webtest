@@ -247,14 +247,14 @@ textarea {
 
 textarea {
   resize: vertical;
-  min-height: 100px;
+  /* min-height: 100px; */
 }
 
 .privacy-notice {
   font-size: 12px;
-  margin-top: 20px;
+  /* margin-top: 10px; */
   /* border-top: 1px solid #ccc; */
-  padding-top: 20px;
+  padding-top: 10px;
   color: #555;
 }
 
@@ -399,10 +399,11 @@ button.loading .button-text {
 
   .contact_us_subtitle {
     font-size: 6vw !important;
+    margin-right: 10px;
   }
 
   .contact_us_subtext {
-    clear: both;
+    /* clear: both; */
     font-size: 3vw !important;
   }
 
@@ -462,19 +463,20 @@ button.loading .button-text {
   }
 
   .form-group label {
-    font-size: 4vw !important;
+    font-size: 3.5vw !important;
   }
 
   .form-group input {
-    font-size: 4vw !important;
+    font-size: 3.5vw !important;
   }
 
   .form-row {
+    display: block;
     gap: 0px !important;
   }
 
   #message {
-    font-size: 4vw;
+    font-size: 3.5vw;
   }
 
   .privacy-notice {
